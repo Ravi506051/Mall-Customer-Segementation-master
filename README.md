@@ -72,3 +72,9 @@ K-Means assigns groups based on the selected features and distance measure. Segm
 Standardize numeric features before distance-based clustering, compare candidate cluster counts, and profile segments in original units. Treat clusters as exploratory patterns.
 
 For reproducible updates, record the dataset or upstream version, environment and dependency versions, configuration, and actual outputs from each run. Keep illustrative examples clearly labelled and never commit credentials or private data.
+
+### Technical Deep Dive
+
+K-Means minimizes within-cluster squared distances, so numeric features with larger scales can dominate the result. Standardize selected features, compare several values of `k` using inertia and silhouette score, and inspect cluster profiles using the original feature units. Cluster identifiers are arbitrary labels; interpret the segment characteristics rather than treating a numeric cluster ID as a customer category.
+
+Suggested engineering checks: test stability across random seeds, document the exact features used, and avoid claims about customer intent that are not supported by the data.
