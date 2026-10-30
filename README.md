@@ -55,3 +55,14 @@ The number of clusters can be explored using the Elbow Method. The Silhouette Sc
 ## ⚠️ Limitations
 
 Customer segments depend on the selected features, preprocessing steps, and number of clusters. Clustering results indicate patterns in data and should not be treated as definitive customer labels.
+
+## Experimentation Checklist
+
+- Inspect feature distributions and standardize features when appropriate before distance-based clustering.
+- Use the Elbow Method as one exploratory aid and compare candidate cluster counts with the Silhouette Score.
+- Profile each cluster using the original feature units so that segment descriptions remain interpretable.
+- Check whether the segment patterns remain reasonably stable when the random seed or sample changes.
+
+## Interpretation
+
+K-Means assigns groups based on the selected features and distance measure. Segment labels are descriptive and should not be treated as fixed customer identities or as proof of purchasing intent.
