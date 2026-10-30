@@ -66,3 +66,9 @@ Customer segments depend on the selected features, preprocessing steps, and numb
 ## Interpretation
 
 K-Means assigns groups based on the selected features and distance measure. Segment labels are descriptive and should not be treated as fixed customer identities or as proof of purchasing intent.
+
+## Project Development Notes
+
+Standardize numeric features before distance-based clustering, compare candidate cluster counts, and profile segments in original units. Treat clusters as exploratory patterns.
+
+For reproducible updates, record the dataset or upstream version, environment and dependency versions, configuration, and actual outputs from each run. Keep illustrative examples clearly labelled and never commit credentials or private data.
