@@ -78,3 +78,11 @@ For reproducible updates, record the dataset or upstream version, environment an
 K-Means minimizes within-cluster squared distances, so numeric features with larger scales can dominate the result. Standardize selected features, compare several values of `k` using inertia and silhouette score, and inspect cluster profiles using the original feature units. Cluster identifiers are arbitrary labels; interpret the segment characteristics rather than treating a numeric cluster ID as a customer category.
 
 Suggested engineering checks: test stability across random seeds, document the exact features used, and avoid claims about customer intent that are not supported by the data.
+
+## Clustering Quality and Interpretation
+
+- Standardize numeric features before distance-based clustering, and document the scaling method.
+- Compare candidate cluster counts using the Elbow Method and Silhouette Score rather than choosing *k* from a plot alone.
+- Profile each cluster in original feature units and describe its characteristics using observed data.
+- Test whether segments remain reasonably stable under different random seeds and feature selections.
+- Treat clusters as exploratory groups, not fixed customer identities or proof of purchasing intent.
