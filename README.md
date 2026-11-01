@@ -94,3 +94,10 @@ Suggested engineering checks: test stability across random seeds, document the e
 - Profile each segment using interpretable summaries such as spending, income, and visit frequency where available.
 - Check cluster stability under different random seeds and preprocessing choices.
 - Treat segment labels as analytical groupings, not fixed customer identities; validate business actions before deployment.
+
+## Segmentation Quality Checks
+
+- Scale numeric features before distance-based clustering and document the transformation used.
+- Compare candidate cluster counts with both the Elbow Method and Silhouette Score rather than relying on one plot.
+- Profile each segment in original units and include the number of customers in every group.
+- Check segment stability across random seeds and explain that clusters are exploratory patterns, not fixed customer identities.
