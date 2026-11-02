@@ -1,103 +1,39 @@
-# Customer-Segementation-Mall-Customers
-This project is a part of Mall Customer Segmentation Data competition held on Kaggle.  The goal of K means is to group data points into distinct non-overlapping subgroups. One of the major application of K means clustering is segmentation of customers to get a better understanding of them which in turn could be used to increase the revenue of the company.
+# Mall Customer Segmentation
 
-## References-
+An unsupervised-learning project that uses customer attributes and K-Means clustering to explore groups with similar spending behaviour.
 
-1. https://en.wikipedia.org/wiki/K-means_clustering
+## Objectives
+- Explore customer income and spending patterns.
+- Identify groups with similar characteristics.
+- Visualize clusters and interpret their profiles.
+- Demonstrate a practical use of unsupervised learning.
 
-2. https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
+## Workflow
+1. Load and inspect the customer dataset.
+2. Explore feature distributions and relationships.
+3. Select and prepare clustering features.
+4. Use the Elbow Method to investigate cluster count.
+5. Fit K-Means and visualize the segments.
+6. Review cluster profiles and limitations.
 
+## Technology
+Python · Pandas · NumPy · Matplotlib · Seaborn · Scikit-learn · Jupyter Notebook
 
-## 🎯 Project Objectives
+## Getting started
+```bash
+git clone https://github.com/Ravi506051/Mall-Customer-Segementation-master.git
+cd Mall-Customer-Segementation-master
+python -m venv .venv
+# Windows: .venv\\Scripts\\activate
+pip install numpy pandas matplotlib seaborn scikit-learn jupyter
+jupyter notebook
+```
 
-- Identify customer groups with similar characteristics
-- Explore customer income and spending patterns
-- Support data-driven customer segmentation
-- Demonstrate unsupervised machine learning using K-Means clustering
+## Evaluation
+Use the Elbow Method as an exploratory aid and consider the Silhouette Score. Cluster quality also requires interpretation in the context of the selected features and business question.
 
-## 🛠️ Technologies Used
+## Future work
+Compare clustering settings, standardization strategies and alternative algorithms. Add a concise segment profile with sample counts and average feature values.
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Jupyter Notebook
-
-## 🔍 Methodology
-
-1. Load and inspect the mall customer dataset.
-2. Clean the data and explore relevant features.
-3. Perform exploratory data analysis (EDA) using visualizations.
-4. Apply K-Means clustering to group similar customers.
-5. Visualize the resulting customer segments and interpret their characteristics.
-
-## 📊 Evaluation
-
-The number of clusters can be explored using the Elbow Method. The Silhouette Score can also help assess how well-separated the clusters are. Actual results depend on the dataset and selected features.
-
-## 💼 Business Applications
-
-- Understand customer spending behaviour
-- Identify customer groups for targeted marketing
-- Support customer engagement and loyalty strategies
-- Help businesses explore potential customer segments
-
-## 🚀 Future Improvements
-
-- Compare different clustering algorithms
-- Add interactive visualizations and a dashboard
-- Experiment with additional customer features
-- Provide clearer descriptions of each customer segment
-- Evaluate clustering quality using appropriate metrics
-
-## ⚠️ Limitations
-
-Customer segments depend on the selected features, preprocessing steps, and number of clusters. Clustering results indicate patterns in data and should not be treated as definitive customer labels.
-
-## Experimentation Checklist
-
-- Inspect feature distributions and standardize features when appropriate before distance-based clustering.
-- Use the Elbow Method as one exploratory aid and compare candidate cluster counts with the Silhouette Score.
-- Profile each cluster using the original feature units so that segment descriptions remain interpretable.
-- Check whether the segment patterns remain reasonably stable when the random seed or sample changes.
-
-## Interpretation
-
-K-Means assigns groups based on the selected features and distance measure. Segment labels are descriptive and should not be treated as fixed customer identities or as proof of purchasing intent.
-
-## Project Development Notes
-
-Standardize numeric features before distance-based clustering, compare candidate cluster counts, and profile segments in original units. Treat clusters as exploratory patterns.
-
-For reproducible updates, record the dataset or upstream version, environment and dependency versions, configuration, and actual outputs from each run. Keep illustrative examples clearly labelled and never commit credentials or private data.
-
-### Technical Deep Dive
-
-K-Means minimizes within-cluster squared distances, so numeric features with larger scales can dominate the result. Standardize selected features, compare several values of `k` using inertia and silhouette score, and inspect cluster profiles using the original feature units. Cluster identifiers are arbitrary labels; interpret the segment characteristics rather than treating a numeric cluster ID as a customer category.
-
-Suggested engineering checks: test stability across random seeds, document the exact features used, and avoid claims about customer intent that are not supported by the data.
-
-## Clustering Quality and Interpretation
-
-- Standardize numeric features before distance-based clustering, and document the scaling method.
-- Compare candidate cluster counts using the Elbow Method and Silhouette Score rather than choosing *k* from a plot alone.
-- Profile each cluster in original feature units and describe its characteristics using observed data.
-- Test whether segments remain reasonably stable under different random seeds and feature selections.
-- Treat clusters as exploratory groups, not fixed customer identities or proof of purchasing intent.
-
-## Clustering and Customer Insights
-
-- Explore feature distributions and scale numerical variables before distance-based clustering.
-- Use the elbow curve and silhouette score as complementary diagnostics when selecting the number of clusters.
-- Profile each segment using interpretable summaries such as spending, income, and visit frequency where available.
-- Check cluster stability under different random seeds and preprocessing choices.
-- Treat segment labels as analytical groupings, not fixed customer identities; validate business actions before deployment.
-
-## Segmentation Quality Checks
-
-- Scale numeric features before distance-based clustering and document the transformation used.
-- Compare candidate cluster counts with both the Elbow Method and Silhouette Score rather than relying on one plot.
-- Profile each segment in original units and include the number of customers in every group.
-- Check segment stability across random seeds and explain that clusters are exploratory patterns, not fixed customer identities.
+## Maintainer
+**Ravi Kumar Rao** · [GitHub](https://github.com/Ravi506051)
