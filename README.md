@@ -37,3 +37,15 @@ Compare clustering settings, standardization strategies and alternative algorith
 
 ## Maintainer
 **Ravi Kumar Rao** · [GitHub](https://github.com/Ravi506051)
+
+## Skills Demonstrated
+
+- Unsupervised learning
+- K-Means clustering
+- Elbow Method
+- customer profiling
+- cluster visualization.
+
+## Portfolio Context
+
+This project is part of my hands-on learning portfolio. The repository documents the workflow and implementation; results should be reproduced from the included code and data before being used in reports or professional claims.
