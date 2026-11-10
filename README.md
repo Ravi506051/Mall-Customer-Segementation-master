@@ -37,3 +37,10 @@ Compare scaling strategies and alternative clustering algorithms. Add a segment 
 
 ## Maintainer
 **Ravi Kumar Rao** · [GitHub](https://github.com/Ravi506051)
+
+## Segment Interpretation and Validation
+
+- Standardize numeric features before distance-based clustering.
+- Compare cluster counts using suitable diagnostics such as the elbow curve and silhouette score.
+- Summarize each segment using its feature profile instead of relying only on cluster IDs.
+- Treat discovered groups as exploratory patterns that should be validated against business context.
